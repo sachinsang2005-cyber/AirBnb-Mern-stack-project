@@ -29,5 +29,6 @@ This project allows users to view, create, edit, and delete property listings wi
 - Delete listings
 - Server-side rendering using EJS
 - Centralized error handling
+- RESTful Apis
 
 Note : this project is a learning-focused web application built to understand databases, RESTful APIs, and full-stack development concepts and is not intended for real-world or production use.
