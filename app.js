@@ -116,8 +116,3 @@ app.listen(8080, () => {
 // git commit -am "updated Readme file"
 // git push
 
-//| Command     | When to use             |
-//| ----------- | ----------------------- |
-//| `git clone` | First time download     |
-//| `git pull`  | Update existing project |
-//| `git push`  | Upload your changes     |
