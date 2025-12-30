@@ -111,3 +111,13 @@ app.listen(8080, () => {
 // git remote add origin <your-repo-url>
 // git pull origin main --allow-unrelated-histories ----> to avoid error manage existing repo
 // git push -u origin main
+
+// I updated Readme file
+// git commit -am "updated Readme file"
+// git push
+
+//| Command     | When to use             |
+//| ----------- | ----------------------- |
+//| `git clone` | First time download     |
+//| `git pull`  | Update existing project |
+//| `git push`  | Upload your changes     |
