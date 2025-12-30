@@ -1,0 +1,47 @@
+<% layout('layouts/boilerplate') %>
+
+    <h1>All Listings</h1>
+
+    
+        <div class="container">
+            <div class="row">
+        <% for (let list of alllisting) { %>
+            <div class="card h-100" style="width: 18rem;">
+                <img src="<%= list.image %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%= list.title%>
+                    </h5>
+                    <p class="card-text">
+                    ₹ <%= list.price %>
+                    </p>
+                    <a href="/listings/<%= list._id %>" class="btn btn-primary"> show</a>
+                </div>
+            </div>
+            <% } %>
+            </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+            <% for (let list of alllisting) { %>
+                <div class="card h-100" style="width: 18rem;">
+                    <img src="<%= list.image %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= list.title%>
+                        </h5>
+                        <p class="card-text">
+                            ₹<%= list.price %>
+                        </p>
+                        <a href="/listings/<%= list._id %>" class="btn btn-primary"> show</a>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    
+
+    <br>
+    
+    

@@ -1,0 +1,56 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">Edit Listing</h1>
+
+                <form action="/listings/<%= list._id %>?_method=PUT" method="POST">
+                    <!-- Title -->
+                    <div class="mb-3">
+                        <label class="form-label">Title</label>
+                        <input name="listing[title]" type="text" required class="form-control"
+                            value="<%= list.title %>">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="mb-3">
+                        <label class="form-label">Description</label>
+                        <textarea name="listing[description]" required
+                            class="form-control"><%= list.description %></textarea>
+                    </div>
+
+                    <!-- Image URL and Location in separate row (optional) -->
+                    <div class="mb-3">
+                        <label class="form-label">Image URL</label>
+                        <input name="listing[image]" type="text" class="form-control" value="<%= list.image %>">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Location</label>
+                        <input name="listing[location]" type="text" class="form-control" value="<%= list.location %>">
+                    </div>
+
+                    <!-- Price and Country in one row -->
+                    <div class="row">
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label">Price</label>
+                            <input name="listing[price]" type="number" required class="form-control"
+                                value="<%= list.price %>">
+                        </div>
+
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label">Country</label>
+                            <input name="listing[country]" type="text" class="form-control" value="<%= list.country %>">
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" class="btn btn-primary btn-success">UPDATE</button>
+                        <a href="/listings/<%= list._id %>" class="btn btn-secondary btn-danger">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
