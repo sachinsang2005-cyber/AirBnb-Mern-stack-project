@@ -105,3 +105,9 @@ app.listen(8080, () => {
 
 // upload this project to github
 // git init
+// git add .            to add all files
+// git commit -m "initial commit"
+// git branch -M main       
+// git remote add origin <your-repo-url>
+// git pull origin main --allow-unrelated-histories ----> to avoid error manage existing repo
+// git push -u origin main
